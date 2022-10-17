@@ -1,0 +1,66 @@
+div.mod_tvm {
+	border: 1px solid #ccc;
+	font-size:8pt;
+	padding: 3px;
+	margin: 3px;
+	vertical-align: middle;
+	border-radius: 10px;
+}
+
+div.mod_tvm a {
+    color: #000;
+	font-size: 13px;
+	cursor: pointer;
+}
+div.mod_tvm span {
+	font-weight: bold;
+}
+
+div.mod_tvm form {
+	font-size: 10pt;
+	margin: 0px;
+	padding: 0px;
+}
+div.mod_tvm_list {
+	display: none;
+}
+
+.mod_tvm_list_table {
+	font-size: 8px;
+	display: show;
+}
+
+.mod_tvm_list_table {
+	font-size: 9px;
+	border: 1px solid #ccc;
+}
+
+.mod_tvm_list_table th {
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 0px 2px 0px 2px;
+	border: 1px solid #ccc;
+}
+
+.mod_tvm_list_table td {
+	padding: 0px 2px 0px 2px;
+}
+.mod_tvm_list_table span {
+	font-size: 10pt;
+}
+
+.mod_tvm_input_comment > input {
+	margin: 0px;
+	padding: 0px;
+}
+.mod_tvm_input_comment > input :button{
+	margin-left: 3px!important;
+}
+
+form.mod_tvm_input_comment {
+	margin-bottom: 3px;
+}
+
+.mod_tvm_expand{
+
+}

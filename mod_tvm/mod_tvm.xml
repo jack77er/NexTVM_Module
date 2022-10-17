@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2.0" client="site" method="upgrade">
+    <name>NexTVM Frontpage Module</name>
+    <author>Jacob Maxa</author>
+    <version>0.0.1</version>
+    <description>Frontpage Modul zur Anzeige der Trainingszeiten.</description>
+	 <creationDate>February 2010</creationDate>
+	<copyright>Copyright (C) 2015 Rostocker Seebären. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>jacob.maxa@gmail.com</authorEmail>
+	<authorUrl>http://rostockerseebären.de</authorUrl>
+    <files>
+        <filename>mod_tvm.xml</filename>
+        <filename module="mod_tvm">mod_tvm.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+	<media folder="media" destination="mod_tvm">
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+					name="category" 
+					type="sql" 
+					default="10" 
+					label="Kategorie des Moduls"
+					description="Welche TVM Kategorie soll in diesem Modul angezeigt werden?"
+					query="SELECT id, name FROM #__tvm_categories" 
+					key_field="id" 
+					value_field="name"
+				/>
+			</fieldset>
+		</fields>
+    </config>
+</extension>
